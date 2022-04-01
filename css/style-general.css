@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Ehrensvärdskas färg */
+    --main-color: #bbe567;
+    --main-fade: linear-gradient(to right, #bbe567, rgb(179, 255, 0));
+    /* --main-color: #76ff26; */
+}
+
+body {
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    /* height: 5    0vh; */
+    background-color: var(--main-color);
+    font-family: 'Ubuntu', sans-serif;
+    /* background-image: linear-gradient(to right, #bbe567, rgb(179, 255, 0)); */
+}
+
+header {
+    height: 70vh;
+    max-width: 100%;
+    /* background-image: url("https://self.emilzackrisson.tk/img/skola/Ehrensvardska.jpg"); */
+    background-image: url(../img/Utsida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+}
+
+#title {
+    color: white;
+    /* color: purple; */
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.title-sec {
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+}
+
+
+/* WAVE */
+
+.custom-shape-divider-bottom-1646923168 {
+    position: absolute;
+    top: calc(70vh - 150px);
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646923168 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1646923168 .shape-fill {
+    fill: var(--main-color);
+}
+
+
+/* WAVE END */
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+}
+
+footer>p {
+    margin: 1vh;
+}

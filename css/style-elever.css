@@ -1,0 +1,68 @@
+header {
+    height: 40vh !important;
+}
+
+
+/* WAVE */
+
+.custom-shape-divider-bottom-1646923168 {
+    top: calc(40vh - 150px) !important;
+}
+
+
+/* WAVE END */
+
+main {
+    display: grid;
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 45%);
+    gap: 10%;
+    /* justify-items: center; */
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
+section {
+    text-align: center;
+}
+
+#link-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 2ch;
+    margin-top: 20px;
+}
+
+#link-wrapper nav {
+    border-style: solid;
+    cursor: pointer;
+    padding: 1.5ch 1ch;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #A7CC5C;
+    transition: 0.3s;
+}
+
+#link-wrapper nav:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+#bild {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#bild img {
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}

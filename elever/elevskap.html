@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevskåp</title>
+
+    <link rel="stylesheet" href="/css/styleElevskap.css">
+    <link rel="stylesheet" href="/css/style-general.css">
+    <link rel="stylesheet" href="/css/style-nav.css">
+
+    <link rel="stylesheet" href="/css/style-slideshow.css">
+
+    <script src="/js/nav.js"></script>
+
+    <!-- Ladda in hamburgarmeny från extern fil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#burger-menu').load("/nav.html");
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div id="burger-menu">
+            <!-- Här är nav-menyn från en annan fil -->
+        </div>
+
+        <section class="title-sec">
+            <h1 id="title">Elevskåp</h1>
+        </section>
+        <!-- #BCE567    Enhrensvärdskas orginalfärg -->
+
+        <!-- Wave separator -->
+        <div class="custom-shape-divider-bottom-1646923168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <div id="title-box">
+            <h3 id="rules-title">Under din studietid får du låna ett elevskåp. Där kan du ha dina personliga saker och skolmaterial. Du får själv köpa hänglås till ditt skåp.</h3>
+        </div>
+
+        <div id="wrapper">
+            <section id="text-wrapper">
+                <article>
+                    <h3>Rent och snyggt</h3>
+                    <p>Du ser själv till att skåpet hålls rent och snyggt. Om du får ditt skåp nedklottrat (utvändigt) och inte själv klarar av att ta bort detta, kontakta expeditionen.</p>
+                </article>
+                <article>
+                    <h3>Byta skåp</h3>
+                    <p>Vill du byta skåp måste du först kontakta din mentor. Mentorn ansvarar för att informera expeditionen om vilken elev som har vilket skåp. Detta är extra viktigt om du exempelvis inte skulle komma in i ditt skåp och vill ha hjälp att
+                        klippa upp låset.</p>
+                </article>
+                <article>
+                    <h3>Värdesaker</h3>
+                    <p>Skolan ansvarar inte för det som förvaras i ditt skåp. Tänk på att aldrig förvara pengar eller annat stöldbegärligt i skåpet. Skolan har inte någon försäkring som täcker stulna saker ur skåpet.
+                    </p>
+                </article>
+                <article>
+                    <h3>Kontroll</h3>
+                    <p>Elevskåpen är skolans egendom och om det finns misstankar att du förvarar sådant som inte är tillåtet att ha på skolan kan rektor kontrollera innehållet i ditt elevskåp</p>
+                </article>
+                <article>
+                    <h3>Vid läsårsslut</h3>
+                    <p>Vid läsårets slut måste du tömma och rengöra skåpet. Du ska också ta bort hänglåset som annars klipps upp. Det utgår ingen ersättning för lås som måste brytas upp.</p>
+                </article>
+            </section>
+            <aside>
+                <div id="images">
+                    <img src="/img/skap.jpg" alt="" id="img1">
+                    <img src="/img/mitt_skap.jpg" alt="" id="img2">
+                    <img src="/img/skap_insida.jpg" alt="" id="img3">
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script src="/js/slideshow.js"></script>
+</body>
+
+</html>

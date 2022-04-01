@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehrensvärdska</title>
+    <link rel="stylesheet" href="css/style-general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-nav.css">
+    <script src="js/nav.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Ladda in hamburgarmeny från extern fil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#burger-menu').load("nav.html");
+            // $( "#burger-menu > nav > #mySidenav" ).addClass( "active-test" );
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div id="burger-menu">
+            <!-- Här är nav-menyn från en annan fil -->
+        </div>
+
+        <section class="title-sec">
+            <h1 id="title">Välkommen till Ehrensvärdska Gymnasiet</h1>
+        </section>
+        <!-- #BCE567    Enhrensvärdskas orginalfärg -->
+
+        <!-- Wave separator -->
+        <div class="custom-shape-divider-bottom-1646923168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <section id="news-section">
+            <div class="section-title">
+                <h3>Info / Aktuellt</h3>
+            </div>
+            <ul id="info">
+                <li>Sista anmälningsdag för prövning i april är den 28 mars.</li>
+                <li><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.inlasningstjanst.se%2Fnyheter%2Fnyheter-i-begreppa%2F%3Futm_medium%3Demail%26utm_source%3Dsharpspring%26sslid%3DMzc3NbI0NDc3sTS3BAA%26sseid%3DMzK2MDY3MjKxtAQA%26jobid%3D4b4ace4a-4c48-432b-b3f2-9806106a7f1e&sa=D&sntz=1&usg=AFQjCNH1pM7aL6la-arx1lTcm5vyQCUIZQ">Nyheter
+                        i BEGREPPA!</a> 17/1 -22</li>
+                <li><a href="https://sites.google.com/skola.karlskrona.se/ehrensvardska/personal?authuser=0">Länk till
+                        schemaärende har lagts till på sidan "Personal".</a> 12/1 -22</li>
+                <li><a href="http://www.google.com/url?q=http%3A%2F%2Fbit.ly%2Fskola24info&sa=D&sntz=1&usg=AFQjCNEYL4PtpWu6P6bHnCR3cGedDiqR_Q">Föräldrarinformation
+                        om hur de loggar in på Skola24 bit.ly/skola24info</a> 13/9 -21</li>
+                <li><a href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fskola.karlskrona.se%2Fdigitala-resurser-elever%2Fstart&sa=D&sntz=1&usg=AFQjCNGBX7QKSH2GQ54gscXiREXGD2IhZA">Introduktionsfilmer
+                        för elever HT21</a> 16/8 -21</li>
+                <li><a href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fd%2F187bjZFOWiQBuqDaDbZfgJdhoJkLQvkG7%2Fp%2F1qeSkkR8p0OyyJPKhURtWBaGrnDRjnIij%2Fedit&sa=D&sntz=1&usg=AFQjCNG_Mug6qSViRMg0mohmnP1yjqbQvA">Ny
+                        hemsida från och med 210816: läs mer. Gamla sites upphör = ny hemsida för Erhensvärdska.</a> 13/8 -21</li>
+                <li>Måndagen 16/8 börjar lärarna det nya arbetsåret: Ettorna börjar 23/8, Tvåor och treor 24/8. 11/8 -21
+                </li>
+
+            </ul>
+        </section>
+        <section id="calendar-section">
+            <div class="section-title">
+                <h3>Kalender</h3>
+            </div>
+            <iframe id="kalender-iframe" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FStockholm&src=Z2FmZS5rYXJsc2tyb25hLnNlX2JjYzJrMGtmM2VmdWgxdDI5Y3NyZjJrc2gwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%239E69AF"
+                style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+        </section>
+
+    </main>
+
+    <hr class="solid">
+    <footer class="fot">
+
+        <p>Gjord av Emil Zackrisson på Ehrensvärdska Gymnasiet</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elever</title>
+    <link rel="stylesheet" href="/css/style-elever.css">
+    <link rel="stylesheet" href="/css/style-general.css">
+    <link rel="stylesheet" href="/css/style-nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="/js/nav.js"></script>
+
+    <!-- Ladda in hamburgarmeny från extern fil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#burger-menu').load("/nav.html");
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div id="burger-menu">
+            <!-- Här är menyn från en annan fil -->
+        </div>
+
+        <section class="title-sec">
+            <h1 id="title">Elever</h1>
+        </section>
+        <!-- #BCE567    Enhrensvärdskas orginalfärg -->
+
+        <!-- Wave separator -->
+        <div class="custom-shape-divider-bottom-1646923168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <section id="links">
+            <h3>Länkar till de olika sidorna</h3>
+            <div id="link-wrapper">
+                <nav onclick="location.href='/elever/elevskap.html'">
+                    <h3>Elevskåp</h3>
+                </nav>
+                <nav onclick="location.href='/elever/omprov.html'">
+                    <h3>Omprov</h3>
+                </nav>
+                <nav onclick="location.href='/elever/drogfri.html'">
+                    <h3>Drogfri Miljö</h3>
+                </nav>
+            </div>
+        </section>
+        <section id="bild">
+            <img src="/img/elever.jpg" alt="">
+        </section>
+    </main>
+
+    <hr class="solid">
+    <footer class="fot">
+
+        <p>Gjord av Emil Zackrisson på Ehrensvärdska Gymnasiet</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+<!-- <ul>
+    <li>
+        <a href="/elever/elevskap.html">Elevskåp</a>
+    </li>
+    <li>
+        <a href="/elever/omprov.html">Omprov</a>
+    </li>
+    <li>
+        <a href="/elever/drogfri.html">Drogfri Miljö</a>
+    </li>
+</ul> -->
