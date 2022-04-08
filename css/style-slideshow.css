@@ -1,8 +1,0 @@
-#images {
-    width: 100%;
-}
-
-#images>img {
-    width: 20%;
-    position: absolute;
-}
