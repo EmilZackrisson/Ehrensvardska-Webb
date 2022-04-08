@@ -13,8 +13,14 @@ header {
 /* WAVE END */
 
 main{
-    margin: 30px;
+    display: grid;
+    /* margin: 30px; */
+    width: 100%;
+    grid-template-columns: 100%;
+    justify-items: center;
+    margin-top: 20px;
 }
+
 
 #skolledning-grid{
     display: grid;
@@ -22,6 +28,7 @@ main{
     gap: 1ch;
     justify-content: space-between;
     width: 100%;
+    padding: 20px;
 }
 
 #pedagoger-grid{
@@ -30,12 +37,28 @@ main{
     gap: 1ch;
     justify-content: space-between;
     width: 100%;
+    padding: 20px;
 }
 
 article{
     word-wrap: break-word;
+    padding: 10px;
+    margin: 5px;
+    /* border-style: solid; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
 }
 
 article img{
     width: 100%;
+}
+
+#ovriga-skolor{
+    margin: 10px;
+    text-align: center;
+}
+
+#ovriga-skolor-links a{
+    margin: 10px;
 }
