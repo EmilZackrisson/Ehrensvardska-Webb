@@ -1,0 +1,41 @@
+header {
+    height: 40vh !important;
+}
+
+
+/* WAVE */
+
+.custom-shape-divider-bottom-1646923168 {
+    top: calc(40vh - 150px) !important;
+}
+
+
+/* WAVE END */
+
+main{
+    margin: 30px;
+}
+
+#skolledning-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    gap: 1ch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#pedagoger-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    gap: 1ch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+article{
+    word-wrap: break-word;
+}
+
+article img{
+    width: 100%;
+}

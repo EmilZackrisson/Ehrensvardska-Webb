@@ -2,7 +2,6 @@ function hover1() {
     console.log("HOVER!!!")
     document.getElementById("img1").style.zIndex = "1";
     document.getElementById("img1").style.width = "150%";
-
 }
 
 function noHover1() {

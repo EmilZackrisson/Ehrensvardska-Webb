@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+
+    <link rel="stylesheet" href="/css/style-general.css">
+    <link rel="stylesheet" href="/css/style-nav.css">
+    <link rel="stylesheet" href="/css/style-personal.css">
+
+    <script src="/js/nav.js"></script>
+
+    <!-- Ladda in hamburgarmeny från extern fil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#burger-menu').load("/nav.html");
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div id="burger-menu">
+            <!-- Här är nav-menyn från en annan fil -->
+        </div>
+
+        <section class="title-sec">
+            <h1 id="title">Personal</h1>
+        </section>
+        <!-- #BCE567    Enhrensvärdskas orginalfärg -->
+
+        <!-- Wave separator -->
+        <div class="custom-shape-divider-bottom-1646923168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+
+        <div id="wrapper">
+            <section id="text-wrapper">
+                <section id="links">
+                    <h3>Länkar till de olika sidorna</h3>
+                    <div id="link-wrapper">
+                        <nav onclick="location.href='https://sites.google.com/skola.karlskrona.se/ehrensvardska/personal/betygs%C3%A4ttning-och-registrering-av-np'">
+                            <h3>Betygsättning, registrering av NP och studieplaner</h3>
+                        </nav>
+                        <nav onclick="location.href='https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Flokalbokning-paa-gymnasieskolorna%2F&sa=D&sntz=1&usg=AOvVaw1PcaLFAFdm350PC60ISd9M'">
+                            <h3>Bokning aula och konferensrum</h3>
+                        </nav>
+                        <nav onclick="location.href='https://goo.gl/forms/D3z78pC3Lpo3xMmB2'">
+                            <h3>Felanmälan fastighet</h3>
+                        </nav>
+                        <nav onclick="location.href='https://www.google.com/url?q=https%3A%2F%2Fheroma.karlskrona.se%2F&sa=D&sntz=1&usg=AOvVaw0Qms3x923Ob0pgbRfxY1Vf'">
+                            <h3>Heroma</h3>
+                        </nav>
+                        <nav onclick="location.href='https://www.google.com/url?q=https%3A%2F%2Fintranat.karlskrona.se%2FSidor%2FDefault.aspx&sa=D&sntz=1&usg=AOvVaw0dOexVTEpyIaG6dNOVaUzc'">
+                            <h3>Intranät</h3>
+                        </nav>
+                        <nav onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSe0qWSomtaqFWQucvObVyYG3KxkL_Hxktt7-bLe6mPkYGmaHA/viewform'">
+                            <h3>Schemaärende</h3>
+                        </nav>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <hr class="solid">
+    <footer class="fot">
+
+        <p>Gjord av Emil Zackrisson på Ehrensvärdska Gymnasiet</p>
+    </footer>
+</body>
+
+</html>

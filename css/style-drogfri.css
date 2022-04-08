@@ -1,0 +1,39 @@
+header {
+    height: 40vh !important;
+    background-image: url(../img/skap.jpg) !important;
+}
+
+
+/* WAVE */
+
+.custom-shape-divider-bottom-1646923168 {
+    top: calc(40vh - 150px) !important;
+}
+
+
+/* WAVE END */
+
+#wrapper {
+    margin: auto;
+    margin-top: 30px;
+}
+
+#text-wrapper{
+    max-width: 600px;
+    margin: 30px;
+    align-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+article{
+    margin-top: 20px;
+}
+
+h4{
+    margin-top: 10px;
+}
+
+hr{
+    margin-top: 30px;
+}
