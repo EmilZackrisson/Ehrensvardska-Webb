@@ -20,8 +20,9 @@
     <script>
         $(document).ready(function() {
 
+            // Kan inte ladda in extern fil med jQuery load från det lokala filsystemet pga att CORS inte tillåter file:// protocol.
+            // Gå till https://ehrensvardska.emilzackrisson.tk/ för den fullt fungerande webbsidan.
             $('#burger-menu').load("nav.html");
-            // $( "#burger-menu > nav > #mySidenav" ).addClass( "active-test" );
 
         });
     </script>

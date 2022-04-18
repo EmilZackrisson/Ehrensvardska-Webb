@@ -50,3 +50,9 @@ section {
     transform: scale(1.1);
     color: white;
 }
+
+@media screen and (max-width: 800px) {
+    #link-wrapper{
+        grid-template-columns: repeat(2, 45%)
+    }
+}

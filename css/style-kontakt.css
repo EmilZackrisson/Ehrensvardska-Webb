@@ -62,3 +62,12 @@ article img{
 #ovriga-skolor-links a{
     margin: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    #skolledning-grid {
+        grid-template-columns: 45% 45%;
+    }
+    #pedagoger-grid {
+        grid-template-columns: 45% 45%;
+    }
+}

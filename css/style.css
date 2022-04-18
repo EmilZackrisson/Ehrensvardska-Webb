@@ -1,14 +1,4 @@
-@media screen and (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    #news-section,
-    #calendar-section {
-        grid-column: 1;
-        grid-row: auto;
-    }
-}
+
 
 #news-section {
     display: flex;
@@ -43,10 +33,16 @@
 main {
     display: grid;
     align-self: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 45%);
     margin: 50px;
     gap: 50px;
     width: auto;
     /* height: 500px; */
     min-height: 500px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 100%;
+    }
 }
