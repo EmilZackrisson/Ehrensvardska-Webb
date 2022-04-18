@@ -28,7 +28,7 @@ function sendEmail() {
         method: 'POST',
         headers: {
             'accept': 'application/json',
-            'api-key': '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',
+            // 'api-key': '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',
             'content-type': 'application/json'
         },
         body: JSON.stringify({
