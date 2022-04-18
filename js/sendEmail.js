@@ -3,7 +3,7 @@ function sendEmail() {
     var firstName = document.getElementsByName("fornamn")[0].value;
     var lastName = document.getElementsByName("efternamn")[0].value;
     var message = document.getElementsByName("meddelande")[0].value;
-    var email = document.getElementsByName("email")[0].value;
+    var email = document.getElementsByName("epost")[0].value;
 
     if((firstName || lastName || message || email) == ""){
         if(firstName == ""){
