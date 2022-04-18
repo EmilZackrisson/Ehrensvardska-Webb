@@ -29,6 +29,26 @@
         });
     </script>
 
+<script src="/js/sendEmail.js"></script>
+
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+			Email.send({
+				Host: "smtp-relay.sendinblue.com",
+				Username : "emil.zackrisson@gmail.com",
+				Password : "CI9YSm6jsO4VdAqg",
+				To : 'emil.zackrisson@gmail.com',
+				From : "ehrensvardska@emilzackrisson.tk",
+				Subject : "hej",
+				Body : "hej världen",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script> -->
+
 </head>
 
 <body>
@@ -54,522 +74,569 @@
 
     </header>
     <main>
+        <section id="contact-form-container">
+            <h3>Kontakta oss</h3>
+            <p>Kontakta oss via detta formulär så återkommer vi med svar på din mail.</p>
+            <form>
+                <div>
+                    <label for="fname">Förnamn</label>
+                    <input type="text" id="fname" name="fornamn" placeholder="Förnamn..." required="required">
+                </div>
+                <div>
+                    <label for="lname">Efternamn</label>
+                    <input type="text" id="lname" name="efternamn" placeholder="Efternamn..." required="required">
+                </div>
+
+                <div>
+                    <label for="epost">Din E-post</label>
+                    <input type="email" name="epost" id="email" placeholder="E-post..." required="required">
+                </div>
+
+                <div>
+                    <label for="subject">Meddelande</label>
+                    <input type="text" id="subject" name="meddelande" placeholder="Meddelande..." required="required">
+                </div>
+                
+
+                <input type="button" value="Skicka" onclick="sendEmail()">
+            </form>
+        </section>
         <h2>Skolledning/admin/EHT</h3>
-        <section id="skolledning-grid">
-            <article>
-                <img src="/img/personal/Marcus Sellgren (1).jpg" alt="">
-                <p>Marcus Sellgren</p>
-                <p>Rektor</p>
-                <p>0455-304284</p>
-                <a href="mailto:marcus.sellgren@skola.karlskrona.se">marcus.sellgren@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Marcus Boström (1).jpg" alt="">
-                <p>Marcus Boström</p>
-                <p>Bitr. Rektor</p>
-                <p>0455-304127</p>
-                <a href="mailto:marcus.bostrom@skola.karlskrona.se">marcus.bostrom@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Barbro Ottosson (1).jpg" alt="">
-                <p>Barbro Ottosson</p>
-                <p>Skoladministratör</p>
-                <p>0455-304082</p>
-                <a href="mailto:barbro.ottosson@skola.karlskrona.se">barbro.ottosson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Maria Olsson (1).jpg" alt="">
-                <p>Maria Olsson</p>
-                <p>Skoladministratör</p>
-                <p>0455-30 40 94</p>
-                <a href="mailto:maria.olsson2@skola.karlskrona.se">maria.olsson2@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Peter Karlsson (1).jpg" alt="">
-                <p>Peter Karlsson</p>
-                <p>Specialpedagog</p>
-                <p>0455-304099</p>
-                <a href="mailto:peter.karlsson@skola.karlskrona.se">peter.karlsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Peter Simonsson.jpg" alt="">
-                <p>Peter Simonsson</p>
-                <p>Utbildningsplanerare / Ke</p>
-                <p>0455-304165</p>
-                <a href="mailto:peter.simonsson@skola.karlskrona.se">peter.simonsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Emma Roos.jpg" alt="">
-                <p>Emma Roos</p>
-                <p>IT-support</p>
-                <p>0455-303752</p>
-                <a href="mailto:emma.roos@skola.karlskrona.se">emma.roos@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Lars Westrup.jpg" alt="">
-                <p>Lasse Westrup</p>
-                <p>ITK-pedagog</p>
-                <p>0455-303377</p>
-                <a href="mailto:lars.westrup@skola.karlskrona.se">lars.westrup@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/personal_andersson_Elisabet.jpg" alt="">
-                <p>Elisabet Andersson</p>
-                <p>Skolsköterska</p>
-                <p>0455-305215</p>
-                <a href="mailto:elisabet.andersson@skola.karlskrona.se">elisabet.andersson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Josefin grefve.png" alt="">
-                <p>Josefin Grefve</p>
-                <p>Skolsköterska</p>
-                <a href="mailto:josefin.grefve@skola.karlskrona.se">josefin.grefve@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/elinnilsson.jpg" alt="">
-                <p>Elin Nilsson</p>
-                <p>Kurator</p>
-                <p>0455-303286</p>
-                <a href="mailto:elin.nilsson4@skola.karlskrona.se">elin.nilsson4@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Hanna Samuelsson.jpg" alt="">
-                <p>Hanna Samuelsson</p>
-                <p>Kurator</p>
-                <p>0455-321688</p>
-                <a href="mailto:hanna.olsson1@skola.karlskrona.se">hanna.olsson1@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Malin Petersson.jpg" alt="">
-                <p>Malin Pettersson</p>
-                <p>Studie- och yrkesvägledare - ansvar BF, HVFR, VO</p>
-                <p>0455-304258</p>
-                <a href="mailto:malin.petersson@skola.karlskrona.se">malin.petersson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Annelie Gustavsson</p>
-                <p>Studie- och yrkesvägledare - ansvar NA, TE</p>
-                <p>0455-304080</p>
-                <a
-                    href="mailto:anneli.marie.gustavsson@skola.karlskrona.se">anneli.marie.gustavsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Ann Gullin</p>
-                <p>Studie- och yrkesvägledare - ansvar BF, HVFR, VO</p>
-                <p>0455-303133</p>
-                <a href="mailto:ann.gullin@skola.karlskrona.se">ann.gullin@skola.karlskrona.se</a>
-            </article>
-        </section>
-        <h2>Pedagoger</h3>
-        <section id="pedagoger-grid">
-            <article>
-                <img src="/img/personal/Magnus Algö.jpg" alt="">
-                <p>Magnus Algö</p>
-                <p>Gymnasielärare TE</p>
-                <p>0455-30382</p>
-                <a href="mailto:magnus.algo@skola.karlskrona.se">magnus.algo@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/anton.png" alt="">
-                <p>Anton Anglert</p>
-                <p>Gymnasielärare Sh/Hi/NASA</p>
-                <p>0768-940666</p>
-                <a href="mailto:anton.anglert@skola.karlskrona.se">anton.anglert@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Frida.jpg" alt="">
-                <p>Frida Askevik</p>
-                <p>Gymnasielärare En/Fr</p>
-                <p>0455-30315</p>
-                <a href="mailto:frida.askevik@skola.karlskrona.se">frida.askevik@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>John Bergqvust Daleke</p>
-                <p>Gymnasielärare Bi/Nk</p>
-                <p>0455-304089</p>
-                <a href="mailto:john.bergqvist@skola.karlskrona.se">john.bergqvist@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Caroline Berglund.jpg" alt="">
-                <p>Caroline Berglund</p>
-                <p>Gymnasielärare Sv</p>
-                <a href="mailto:caroline.berglund@skola.karlskrona.se">caroline.berglund@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Sara Bergström.jpg" alt="">
-                <p>Sara Bergström</p>
-                <p>Gymnasielärare Idrott / BF</p>
-                <p>0455-302669</p>
-                <a href="mailto:sara.bergstrom@skola.karlskrona.se">sara.bergstrom@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Pia Dahlgren.jpg" alt="">
-                <p>Pia Dahlgren</p>
-                <p>Gymnasielärare Frisörämnen</p>
-                <p>0455-304077</p>
-                <a href="mailto:pia.dahlgren@skola.karlskrona.se">pia.dahlgren@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Barbro Dalin-Volsing.jpg" alt="">
-                <p>Barbro Dahlin Volsing</p>
-                <p>Gymnasielärare Frisörämnen</p>
-                <p>0455-304077</p>
-                <a href="mailto:barbro.dahlin.volsing@skola.karlskrona.se">barbro.dahlin.volsing@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Johan Danielsson.jpg" alt="">
-                <p>Johan Danielsson</p>
-                <p>Gymnasielärare Sv/En</p>
-                <p>0455-303515</p>
-                <a href="mailto:johan.danielsson@skola.karlskrona.se">johan.danielsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Julia Danielsson.jpg" alt="">
-                <p>Julia Danielsson</p>
-                <p>Gymnasielärare En</p>
-                <a href="mailto:julia.danielsson@skola.karlskrona.se">julia.danielsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Maria Ferding.jpg" alt="">
-                <p>Maria Ferding</p>
-                <p>Gymnasielärare Sv/Sva/Re</p>
-                <p>0455303335</p>
-                <a href="mailto:maria.ferding@skola.karlskrona.se">maria.ferding@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Anette Flinke.jpg" alt="">
-                <p>Anette Flinke</p>
-                <p>Gymnasielärare Sva/Fr/En</p>
-                <p>0455-304232</p>
-                <a href="mailto:anette.flinke@skola.karlskrona.se">anette.flinke@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Sandra Nilsson.jpg" alt="">
-                <p>Sandra Friberg Nilsson</p>
-                <p>Gymnasielärare Sh, Ps, Soc, Spec.ped</p>
-                <p>0455-303168</p>
-                <a href="mailto:sandra.friberg.nilsson@skola.karlskrona.se">sandra.friberg.nilsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Ulf Gladher</p>
-                <p>Gymnasielärare Sv/En</p>
-                <p>0455-303269</p>
-                <a href="mailto:ulf.gladher@skola.karlskrona.se">ulf.gladher@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/PERSONAL_Gralvik_Ola.jpg" alt="">
-                <p>Ola Gralvik</p>
-                <p>Gymnasielärare Idrott/Bf</p>
-                <p>0455-304090</p>
-                <a href="mailto:ola.gralvik@skola.karlskrona.se">ola.gralvik@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Mia Gullstrand.jpg" alt="">
-                <p>Mia Gullstrand</p>
-                <p>Gymnasielärare En/Hi</p>
-                <a href="mailto:mia.gullstrand@skola.karlskrona.se">mia.gullstrand@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Martin Hampus.jpg" alt="">
-                <p>Martin Hampus</p>
-                <p>Gymnasielärare Ke</p>
-                <a href="mailto:martin.hampus@skola.karlskrona.se">martin.hampus@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Annette Hansson.jpg" alt="">
-                <p>Annette Hansson</p>
-                <p>Gymnasielärare Bf</p>
-                <p>0455-303269</p>
-                <a href="mailto:annette.hansson@skola.karlskrona.se">annette.hansson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Simon Hedlund</p>
-                <p>Gymnasielärare Sv/En</p>
-                <a href="mailto:simon.hedlund@skola.karlskrona.se">simon.hedlund@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Torbj�rn Holgersson.jpg" alt="">
-                <p>Torbjörn Holgersson</p>
-                <p>Gymnasielärare Te</p>
-                <a href="mailto:torbjorn.holgersson@skola.karlskrona.se">torbjorn.holgersson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Catarina Hultkrantz.jpg" alt="">
-                <p>Catarina Hultkrantz</p>
-                <p>Gymnasielärare Sv/Hi</p>
-                <p>0455-303269</p>
-                <a href="mailto:catarina.hultkrantz@skola.karlskrona.se">catarina.hultkrantz@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Christian Håkansson.jpg" alt="">
-                <p>Christian Håkansson</p>
-                <p>Gymnasielärare Sh/Hi</p>
-                <p>0455-304168</p>
-                <a href="mailto:christian.hakansson@skola.karlskrona.se">christian.hakansson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Maria Idbrant.jpg" alt="">
-                <p>Maria Idbrant</p>
-                <p>Gymnasielärare Vårdämnen</p>
-                <p>0455-304242</p>
-                <a href="mailto:maria.idbrant@skola.karlskrona.se">maria.idbrant@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/personal_Johansson_Henrik.jpg" alt="">
-                <p>Henrik Johansson</p>
-                <p>Gymnasielärare Sv/En</p>
-                <a href="mailto:henrik.johansson@skola.karlskrona.sehenrik.johansson@skola.karlskrona.se"></a>
-            </article>
-            <article>
-                <img src="/img/personal/Maria johansson.png" alt="">
-                <p>Maria Johansson</p>
-                <p>Elevhandledare</p>
-                <p>0709-304198</p>
-                <a href="mailto:maria.johansson@skola.karlskrona.se">maria.johansson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Louise Karlesand.jpg" alt="">
-                <p>Louise Karlesand</p>
-                <p>Gymnasielärare Ma/Fy/Te</p>
-                <p>0455-303260</p>
-                <a href="mailto:louise.karlesand@skola.karlskrona.se">louise.karlesand@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Johan Karlsson.jpg" alt="">
-                <p>Johan Karlsson</p>
-                <p>Gymnasielärare Ma/Re</p>
-                <a href="mailto:johan.karlsson@skola.karlskrona.se">johan.karlsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Personal_Kulka_Karin.jpg" alt="">
-                <p>Karin Kulka</p>
-                <p>Gymnasielärare Fy</p>
-                <p>0455-304248</p>
-                <a href="mailto:karin.kulka@skola.karlskrona.se">karin.kulka@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Brita Kallgren.jpg" alt="">
-                <p>Brita Kallgren</p>
-                <a href="mailto:brita.kallgren@skola.karlskrona.se">brita.kallgren@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Joanna Liljekvist.jpg" alt="">
-                <p>Joanna Liljekvist</p>
-                <p>Elevhandledare</p>
-                <p>0455-304111</p>
-                <a href="mailto:joanna.liljekvist@skola.karlskrona.se">joanna.liljekvist@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Malin Lindbom.jpg" alt="">
-                <p>Malin Lindbom</p>
-                <p>Gymnasielärare Sv/Sva</p>
-                <p>0455-304233</p>
-                <a href="mailto:malin.lindblom@skola.karlskrona.se">malin.lindblom@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Helene Lindeblad</p>
-                <p>Gymnasielärare Bi/Nk</p>
-                <p>0455-304089</p>
-                <a href="mailto:helene.lindeblad@skola.karlskrona.se">helene.lindeblad@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Peter Lindholm.jpg" alt="">
-                <p>Peter Lindholm</p>
-                <p>Fäktning/Idrott</p>
-                <p>0455-304113</p>
-                <a href="mailto:peter.lindholm@skola.karlskrona.se">peter.lindholm@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Susanne Ljungkrantz.jpg" alt="">
-                <p>Gymnasielärare Bf</p>
-                <p>0455-303269</p>
-                <a href="mailto:susanne.ljungkrantz@skola.karlskrona.se">susanne.ljungkrantz@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/daniel magnusson.jpg" alt="">
-                <p>Daniel Magnusson</p>
-                <p>Gymnasielärare Idrott/Ge/Bf</p>
-                <p>0455-304090</p>
-                <a href="mailto:daniel.magnusson2@skola.karlskrona.se">daniel.magnusson2@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Mikael Manneklint.jpg" alt="">
-                <p>Mikael Manneklint</p>
-                <p>Gymnasielärare Ma/En</p>
-                <p>0455-304232</p>
-                <a href="mailto:mikael.mannelklint@skola.karlskrona.se">mikael.mannelklint@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/personal_Hernandez de Martinez_enna Haydee.jpg" alt="">
-                <p>Enna Haydee Hernandez</p>
-                <p>Gymnasielärare Te/Prog</p>
-                <p>0455-304028</p>
-                <a href="mailto:enna.martinez@skola.karlskrona.se">enna.martinez@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Per Maxon.jpg" alt="">
-                <p>Per Maxon</p>
-                <p>Gymnasielärare Ma/Fy</p>
-                <p>0455-304087</p>
-                <a href="mailto:per.maxon@skola.karlskrona.se">per.maxon@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Jenny Mansson.jpg" alt="">
-                <p>Jenny Mansson</p>
-                <p>Gymnasielärare Bf</p>
-                <a href="mailto:jenny.mansson@skola.karlskrona.se">jenny.mansson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/PERSONAL_Nabha_Majed.jpg" alt="">
-                <p>Majed Nabha</p>
-                <p>Gymnasielärare Te</p>
-                <p>0455-304556</p>
-                <a href="mailto:majed.nabha@skola.karlskrona.se">majed.nabha@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/PERSONAL_Niglov_Ami.jpg" alt="">
-                <p>Ami Niglov</p>
-                <p>Gymnasielärare Ma/Fy</p>
-                <p>0455-303260</p>
-                <a href="mailto:ami.niglov@skola.karlskrona.se">ami.niglov@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/nicke.jpeg" alt="">
-                <p>Nicholas Odehammar</p>
-                <p>Gymnasielärare Idrott</p>
-                <p>0455-304090</p>
-                <a href="mailto:nicholas.odehammar@skola.karlskrona.se">nicholas.odehammar@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Mats Olsson.jpg" alt="">
-                <p>Mats Olsson</p>
-                <p>Gymnasielärare Bi/Nk/Miljö</p>
-                <p>0455-305289</p>
-                <a href="mailto:mats.olsson@skola.karlskrona.se">mats.olsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Jimmy  Petersson.jpg" alt="">
-                <p>Jimmy Petersson</p>
-                <p>Gymnasielärare Ma/Fy</p>
-                <p>0455-304087</p>
-                <a href="mailto:jimmy.petersson@skola.karlskrona.se">jimmy.petersson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Marie Pettersson.jpg" alt="">
-                <p>Marie Pettersson</p>
-                <a href="mailto:marie.pettersson@skola.karlskrona.se">marie.pettersson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Bengt-G�ran Printzlow.jpg" alt="">
-                <p>Bengt-Göran Printzlow</p>
-                <p>Elevhandledare</p>
-                <p>0766-208187</p>
-                <a href="mailto:bengt-goran.printzlow@skola.karlskrona.se">bengt-goran.printzlow@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Jerry Rahmqvist.jpg" alt="">
-                <p>Jerry Rahmqvist</p>
-                <p>Gymnasielärare Te</p>
-                <a href="mailto:jerry.rahmqvist@skola.karlskrona.se">jerry.rahmqvist@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Per Rydquist.png" alt="">
-                <p>Per Rydquist</p>
-                <p>Gymnasielärare Idrott/Idrottsprofil</p>
-                <p>0455-304203</p>
-                <a href="mailto:per.rydquist@skola.karlskrona.se">per.rydquist@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Annelie Sahlin.jpg" alt="">
-                <p>Annelie Sahlin</p>
-                <p>Gymnasielärare Hi/Re</p>
-                <p>0455-303515</p>
-                <a href="mailto:annelie.sahlin@skola.karlskrona.se">annelie.sahlin@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Selvina Zec.jpg" alt="">
-                <p>Selvina Zec Todorovac</p>
-                <p>Gymnasielärare Vårdämnen</p>
-                <a href="mailto:selvina.zectodorovac@skola.karlskrona.se">selvina.zectodorovac@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Anna Olsson.jpg" alt="">
-                <p>Anna Svärd-Olsson</p>
-                <p>Gymnasielärare Ma/Fy</p>
-                <p>0455-304282</p>
-                <a href="mailto:anna.svard.olsson@skola.karlskrona.se">anna.svard.olsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Emil Söderstrand</p>
-                <p>Gymnasielärare Idrott</p>
-                <a href="mailto:emil.soderstrand@skola.karlskrona.se">emil.soderstrand@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Charlotte S�derstr�m.jpg" alt="">
-                <p>Charlotte Söderström</p>
-                <p>Gymnasielärare Bi/Ke/Kt</p>
-                <a href="mailto:charlotte.soderstrom@skola.karlskrona.se">charlotte.soderstrom@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Timmy Turesson.jpg" alt="">
-                <p>Timmy Turesson</p>
-                <p>Gymnasielärare Ma/Fy</p>
-                <a href="mailto:timmy.turesson@skola.karlskrona.se">timmy.turesson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Maria Vernersson.jpg" alt="">
-                <p>Maria Wernersson</p>
-                <p>Gymnasielärare Ke</p>
-                <a href="mailto:maria.wernersson@skola.karlskrona.se">maria.wernersson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Magnus Wendeler.jpg" alt="">
-                <p>Magnus Wendeler</p>¨
-                <p>Gymnasielärare Ma/Fy</p>
-                <p>0455-304089</p>
-                <a href="mailto:magnus.wendeler@skola.karlskrona.se">magnus.wendeler@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Malin Wictorsson.jpg" alt="">
-                <p>Malin Wictorsson</p>
-                <p>Gymnasielärare Sv/Re</p>
-                <a href="mailto:malin.wictorsson@skola.karlskrona.se">malin.wictorsson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Helene �kesson.jpg" alt="">
-                <p>Helene Åkesson</p>
-                <p>Gymnasielärare Ma/Ke/Te</p>
-                <p>0455-303260</p>
-                <a href="mailto:helene.akesson@skola.karlskrona.se">helene.akesson@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/ingen.gif" alt="">
-                <p>Klara Ölmedal</p>
-                <p>Gymnasielärare Ma/Fy</p>
-                <a href="mailto:klara.olmedal@skola.karlskrona.se">klara.olmedal@skola.karlskrona.se</a>
-            </article>
-            <article>
-                <img src="/img/personal/Mattias Ostberg.jpg" alt="">
-                <p>Mattias Östberg</p>
-                <p>Gymnasielärare En/Hi</p>
-                <a href="mailto:mattias.ostberg@skola.karlskrona.se">mattias.ostberg@skola.karlskrona.se</a>
-            </article>
-        </section>
-        <div id="ovriga-skolor">
-        <p>Övriga gymnasieskolor</p>
-        <div id="ovriga-skolor-links">
-            <a href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Faf-chapmangymnasiet%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0lSIYuaDQNISLfX4OpI0v4">Kontaktinformation af Chapmangymnasiet</a>
-            <a href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ffischerstroemska%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0qy5lCWC6bFiLL6y6yAvp1">Kontaktinformation Fischerströmska gymnasiet</a>
-            <a href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ftornstromskagymnasiet%2Fkontakt-1&sa=D&sntz=1&usg=AOvVaw1xxcr0G4u40SBH3AUjSGwM">Kontaktinformation Törnströmska gymnasiet</a>
-        </div>
-    </div>
+            <section id="skolledning-grid">
+                <article>
+                    <img src="/img/personal/Marcus Sellgren (1).jpg" alt="">
+                    <p>Marcus Sellgren</p>
+                    <p>Rektor</p>
+                    <p>0455-304284</p>
+                    <a href="mailto:marcus.sellgren@skola.karlskrona.se">marcus.sellgren@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Marcus Boström (1).jpg" alt="">
+                    <p>Marcus Boström</p>
+                    <p>Bitr. Rektor</p>
+                    <p>0455-304127</p>
+                    <a href="mailto:marcus.bostrom@skola.karlskrona.se">marcus.bostrom@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Barbro Ottosson (1).jpg" alt="">
+                    <p>Barbro Ottosson</p>
+                    <p>Skoladministratör</p>
+                    <p>0455-304082</p>
+                    <a href="mailto:barbro.ottosson@skola.karlskrona.se">barbro.ottosson@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Maria Olsson (1).jpg" alt="">
+                    <p>Maria Olsson</p>
+                    <p>Skoladministratör</p>
+                    <p>0455-30 40 94</p>
+                    <a href="mailto:maria.olsson2@skola.karlskrona.se">maria.olsson2@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Peter Karlsson (1).jpg" alt="">
+                    <p>Peter Karlsson</p>
+                    <p>Specialpedagog</p>
+                    <p>0455-304099</p>
+                    <a href="mailto:peter.karlsson@skola.karlskrona.se">peter.karlsson@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Peter Simonsson.jpg" alt="">
+                    <p>Peter Simonsson</p>
+                    <p>Utbildningsplanerare / Ke</p>
+                    <p>0455-304165</p>
+                    <a href="mailto:peter.simonsson@skola.karlskrona.se">peter.simonsson@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Emma Roos.jpg" alt="">
+                    <p>Emma Roos</p>
+                    <p>IT-support</p>
+                    <p>0455-303752</p>
+                    <a href="mailto:emma.roos@skola.karlskrona.se">emma.roos@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Lars Westrup.jpg" alt="">
+                    <p>Lasse Westrup</p>
+                    <p>ITK-pedagog</p>
+                    <p>0455-303377</p>
+                    <a href="mailto:lars.westrup@skola.karlskrona.se">lars.westrup@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/personal_andersson_Elisabet.jpg" alt="">
+                    <p>Elisabet Andersson</p>
+                    <p>Skolsköterska</p>
+                    <p>0455-305215</p>
+                    <a href="mailto:elisabet.andersson@skola.karlskrona.se">elisabet.andersson@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Josefin grefve.png" alt="">
+                    <p>Josefin Grefve</p>
+                    <p>Skolsköterska</p>
+                    <a href="mailto:josefin.grefve@skola.karlskrona.se">josefin.grefve@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/elinnilsson.jpg" alt="">
+                    <p>Elin Nilsson</p>
+                    <p>Kurator</p>
+                    <p>0455-303286</p>
+                    <a href="mailto:elin.nilsson4@skola.karlskrona.se">elin.nilsson4@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Hanna Samuelsson.jpg" alt="">
+                    <p>Hanna Samuelsson</p>
+                    <p>Kurator</p>
+                    <p>0455-321688</p>
+                    <a href="mailto:hanna.olsson1@skola.karlskrona.se">hanna.olsson1@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/Malin Petersson.jpg" alt="">
+                    <p>Malin Pettersson</p>
+                    <p>Studie- och yrkesvägledare - ansvar BF, HVFR, VO</p>
+                    <p>0455-304258</p>
+                    <a href="mailto:malin.petersson@skola.karlskrona.se">malin.petersson@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/ingen.gif" alt="">
+                    <p>Annelie Gustavsson</p>
+                    <p>Studie- och yrkesvägledare - ansvar NA, TE</p>
+                    <p>0455-304080</p>
+                    <a
+                        href="mailto:anneli.marie.gustavsson@skola.karlskrona.se">anneli.marie.gustavsson@skola.karlskrona.se</a>
+                </article>
+                <article>
+                    <img src="/img/personal/ingen.gif" alt="">
+                    <p>Ann Gullin</p>
+                    <p>Studie- och yrkesvägledare - ansvar BF, HVFR, VO</p>
+                    <p>0455-303133</p>
+                    <a href="mailto:ann.gullin@skola.karlskrona.se">ann.gullin@skola.karlskrona.se</a>
+                </article>
+            </section>
+            <h2>Pedagoger</h3>
+                <section id="pedagoger-grid">
+                    <article>
+                        <img src="/img/personal/Magnus Algö.jpg" alt="">
+                        <p>Magnus Algö</p>
+                        <p>Gymnasielärare TE</p>
+                        <p>0455-30382</p>
+                        <a href="mailto:magnus.algo@skola.karlskrona.se">magnus.algo@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/anton.png" alt="">
+                        <p>Anton Anglert</p>
+                        <p>Gymnasielärare Sh/Hi/NASA</p>
+                        <p>0768-940666</p>
+                        <a href="mailto:anton.anglert@skola.karlskrona.se">anton.anglert@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Frida.jpg" alt="">
+                        <p>Frida Askevik</p>
+                        <p>Gymnasielärare En/Fr</p>
+                        <p>0455-30315</p>
+                        <a href="mailto:frida.askevik@skola.karlskrona.se">frida.askevik@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/ingen.gif" alt="">
+                        <p>John Bergqvust Daleke</p>
+                        <p>Gymnasielärare Bi/Nk</p>
+                        <p>0455-304089</p>
+                        <a href="mailto:john.bergqvist@skola.karlskrona.se">john.bergqvist@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Caroline Berglund.jpg" alt="">
+                        <p>Caroline Berglund</p>
+                        <p>Gymnasielärare Sv</p>
+                        <a href="mailto:caroline.berglund@skola.karlskrona.se">caroline.berglund@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Sara Bergström.jpg" alt="">
+                        <p>Sara Bergström</p>
+                        <p>Gymnasielärare Idrott / BF</p>
+                        <p>0455-302669</p>
+                        <a href="mailto:sara.bergstrom@skola.karlskrona.se">sara.bergstrom@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Pia Dahlgren.jpg" alt="">
+                        <p>Pia Dahlgren</p>
+                        <p>Gymnasielärare Frisörämnen</p>
+                        <p>0455-304077</p>
+                        <a href="mailto:pia.dahlgren@skola.karlskrona.se">pia.dahlgren@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Barbro Dalin-Volsing.jpg" alt="">
+                        <p>Barbro Dahlin Volsing</p>
+                        <p>Gymnasielärare Frisörämnen</p>
+                        <p>0455-304077</p>
+                        <a
+                            href="mailto:barbro.dahlin.volsing@skola.karlskrona.se">barbro.dahlin.volsing@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Johan Danielsson.jpg" alt="">
+                        <p>Johan Danielsson</p>
+                        <p>Gymnasielärare Sv/En</p>
+                        <p>0455-303515</p>
+                        <a href="mailto:johan.danielsson@skola.karlskrona.se">johan.danielsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Julia Danielsson.jpg" alt="">
+                        <p>Julia Danielsson</p>
+                        <p>Gymnasielärare En</p>
+                        <a href="mailto:julia.danielsson@skola.karlskrona.se">julia.danielsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Maria Ferding.jpg" alt="">
+                        <p>Maria Ferding</p>
+                        <p>Gymnasielärare Sv/Sva/Re</p>
+                        <p>0455303335</p>
+                        <a href="mailto:maria.ferding@skola.karlskrona.se">maria.ferding@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Anette Flinke.jpg" alt="">
+                        <p>Anette Flinke</p>
+                        <p>Gymnasielärare Sva/Fr/En</p>
+                        <p>0455-304232</p>
+                        <a href="mailto:anette.flinke@skola.karlskrona.se">anette.flinke@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Sandra Nilsson.jpg" alt="">
+                        <p>Sandra Friberg Nilsson</p>
+                        <p>Gymnasielärare Sh, Ps, Soc, Spec.ped</p>
+                        <p>0455-303168</p>
+                        <a
+                            href="mailto:sandra.friberg.nilsson@skola.karlskrona.se">sandra.friberg.nilsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/ingen.gif" alt="">
+                        <p>Ulf Gladher</p>
+                        <p>Gymnasielärare Sv/En</p>
+                        <p>0455-303269</p>
+                        <a href="mailto:ulf.gladher@skola.karlskrona.se">ulf.gladher@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/PERSONAL_Gralvik_Ola.jpg" alt="">
+                        <p>Ola Gralvik</p>
+                        <p>Gymnasielärare Idrott/Bf</p>
+                        <p>0455-304090</p>
+                        <a href="mailto:ola.gralvik@skola.karlskrona.se">ola.gralvik@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Mia Gullstrand.jpg" alt="">
+                        <p>Mia Gullstrand</p>
+                        <p>Gymnasielärare En/Hi</p>
+                        <a href="mailto:mia.gullstrand@skola.karlskrona.se">mia.gullstrand@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Martin Hampus.jpg" alt="">
+                        <p>Martin Hampus</p>
+                        <p>Gymnasielärare Ke</p>
+                        <a href="mailto:martin.hampus@skola.karlskrona.se">martin.hampus@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Annette Hansson.jpg" alt="">
+                        <p>Annette Hansson</p>
+                        <p>Gymnasielärare Bf</p>
+                        <p>0455-303269</p>
+                        <a href="mailto:annette.hansson@skola.karlskrona.se">annette.hansson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/ingen.gif" alt="">
+                        <p>Simon Hedlund</p>
+                        <p>Gymnasielärare Sv/En</p>
+                        <a href="mailto:simon.hedlund@skola.karlskrona.se">simon.hedlund@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Torbj�rn Holgersson.jpg" alt="">
+                        <p>Torbjörn Holgersson</p>
+                        <p>Gymnasielärare Te</p>
+                        <a
+                            href="mailto:torbjorn.holgersson@skola.karlskrona.se">torbjorn.holgersson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Catarina Hultkrantz.jpg" alt="">
+                        <p>Catarina Hultkrantz</p>
+                        <p>Gymnasielärare Sv/Hi</p>
+                        <p>0455-303269</p>
+                        <a
+                            href="mailto:catarina.hultkrantz@skola.karlskrona.se">catarina.hultkrantz@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Christian Håkansson.jpg" alt="">
+                        <p>Christian Håkansson</p>
+                        <p>Gymnasielärare Sh/Hi</p>
+                        <p>0455-304168</p>
+                        <a
+                            href="mailto:christian.hakansson@skola.karlskrona.se">christian.hakansson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Maria Idbrant.jpg" alt="">
+                        <p>Maria Idbrant</p>
+                        <p>Gymnasielärare Vårdämnen</p>
+                        <p>0455-304242</p>
+                        <a href="mailto:maria.idbrant@skola.karlskrona.se">maria.idbrant@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/personal_Johansson_Henrik.jpg" alt="">
+                        <p>Henrik Johansson</p>
+                        <p>Gymnasielärare Sv/En</p>
+                        <a href="mailto:henrik.johansson@skola.karlskrona.sehenrik.johansson@skola.karlskrona.se"></a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Maria johansson.png" alt="">
+                        <p>Maria Johansson</p>
+                        <p>Elevhandledare</p>
+                        <p>0709-304198</p>
+                        <a href="mailto:maria.johansson@skola.karlskrona.se">maria.johansson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Louise Karlesand.jpg" alt="">
+                        <p>Louise Karlesand</p>
+                        <p>Gymnasielärare Ma/Fy/Te</p>
+                        <p>0455-303260</p>
+                        <a href="mailto:louise.karlesand@skola.karlskrona.se">louise.karlesand@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Johan Karlsson.jpg" alt="">
+                        <p>Johan Karlsson</p>
+                        <p>Gymnasielärare Ma/Re</p>
+                        <a href="mailto:johan.karlsson@skola.karlskrona.se">johan.karlsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Personal_Kulka_Karin.jpg" alt="">
+                        <p>Karin Kulka</p>
+                        <p>Gymnasielärare Fy</p>
+                        <p>0455-304248</p>
+                        <a href="mailto:karin.kulka@skola.karlskrona.se">karin.kulka@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Brita Kallgren.jpg" alt="">
+                        <p>Brita Kallgren</p>
+                        <a href="mailto:brita.kallgren@skola.karlskrona.se">brita.kallgren@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Joanna Liljekvist.jpg" alt="">
+                        <p>Joanna Liljekvist</p>
+                        <p>Elevhandledare</p>
+                        <p>0455-304111</p>
+                        <a href="mailto:joanna.liljekvist@skola.karlskrona.se">joanna.liljekvist@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Malin Lindbom.jpg" alt="">
+                        <p>Malin Lindbom</p>
+                        <p>Gymnasielärare Sv/Sva</p>
+                        <p>0455-304233</p>
+                        <a href="mailto:malin.lindblom@skola.karlskrona.se">malin.lindblom@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/ingen.gif" alt="">
+                        <p>Helene Lindeblad</p>
+                        <p>Gymnasielärare Bi/Nk</p>
+                        <p>0455-304089</p>
+                        <a href="mailto:helene.lindeblad@skola.karlskrona.se">helene.lindeblad@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Peter Lindholm.jpg" alt="">
+                        <p>Peter Lindholm</p>
+                        <p>Fäktning/Idrott</p>
+                        <p>0455-304113</p>
+                        <a href="mailto:peter.lindholm@skola.karlskrona.se">peter.lindholm@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Susanne Ljungkrantz.jpg" alt="">
+                        <p>Gymnasielärare Bf</p>
+                        <p>0455-303269</p>
+                        <a
+                            href="mailto:susanne.ljungkrantz@skola.karlskrona.se">susanne.ljungkrantz@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/daniel magnusson.jpg" alt="">
+                        <p>Daniel Magnusson</p>
+                        <p>Gymnasielärare Idrott/Ge/Bf</p>
+                        <p>0455-304090</p>
+                        <a href="mailto:daniel.magnusson2@skola.karlskrona.se">daniel.magnusson2@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Mikael Manneklint.jpg" alt="">
+                        <p>Mikael Manneklint</p>
+                        <p>Gymnasielärare Ma/En</p>
+                        <p>0455-304232</p>
+                        <a
+                            href="mailto:mikael.mannelklint@skola.karlskrona.se">mikael.mannelklint@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/personal_Hernandez de Martinez_enna Haydee.jpg" alt="">
+                        <p>Enna Haydee Hernandez</p>
+                        <p>Gymnasielärare Te/Prog</p>
+                        <p>0455-304028</p>
+                        <a href="mailto:enna.martinez@skola.karlskrona.se">enna.martinez@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Per Maxon.jpg" alt="">
+                        <p>Per Maxon</p>
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <p>0455-304087</p>
+                        <a href="mailto:per.maxon@skola.karlskrona.se">per.maxon@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Jenny Mansson.jpg" alt="">
+                        <p>Jenny Mansson</p>
+                        <p>Gymnasielärare Bf</p>
+                        <a href="mailto:jenny.mansson@skola.karlskrona.se">jenny.mansson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/PERSONAL_Nabha_Majed.jpg" alt="">
+                        <p>Majed Nabha</p>
+                        <p>Gymnasielärare Te</p>
+                        <p>0455-304556</p>
+                        <a href="mailto:majed.nabha@skola.karlskrona.se">majed.nabha@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/PERSONAL_Niglov_Ami.jpg" alt="">
+                        <p>Ami Niglov</p>
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <p>0455-303260</p>
+                        <a href="mailto:ami.niglov@skola.karlskrona.se">ami.niglov@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/nicke.jpeg" alt="">
+                        <p>Nicholas Odehammar</p>
+                        <p>Gymnasielärare Idrott</p>
+                        <p>0455-304090</p>
+                        <a
+                            href="mailto:nicholas.odehammar@skola.karlskrona.se">nicholas.odehammar@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Mats Olsson.jpg" alt="">
+                        <p>Mats Olsson</p>
+                        <p>Gymnasielärare Bi/Nk/Miljö</p>
+                        <p>0455-305289</p>
+                        <a href="mailto:mats.olsson@skola.karlskrona.se">mats.olsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Jimmy  Petersson.jpg" alt="">
+                        <p>Jimmy Petersson</p>
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <p>0455-304087</p>
+                        <a href="mailto:jimmy.petersson@skola.karlskrona.se">jimmy.petersson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Marie Pettersson.jpg" alt="">
+                        <p>Marie Pettersson</p>
+                        <a href="mailto:marie.pettersson@skola.karlskrona.se">marie.pettersson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Bengt-G�ran Printzlow.jpg" alt="">
+                        <p>Bengt-Göran Printzlow</p>
+                        <p>Elevhandledare</p>
+                        <p>0766-208187</p>
+                        <a
+                            href="mailto:bengt-goran.printzlow@skola.karlskrona.se">bengt-goran.printzlow@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Jerry Rahmqvist.jpg" alt="">
+                        <p>Jerry Rahmqvist</p>
+                        <p>Gymnasielärare Te</p>
+                        <a href="mailto:jerry.rahmqvist@skola.karlskrona.se">jerry.rahmqvist@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Per Rydquist.png" alt="">
+                        <p>Per Rydquist</p>
+                        <p>Gymnasielärare Idrott/Idrottsprofil</p>
+                        <p>0455-304203</p>
+                        <a href="mailto:per.rydquist@skola.karlskrona.se">per.rydquist@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Annelie Sahlin.jpg" alt="">
+                        <p>Annelie Sahlin</p>
+                        <p>Gymnasielärare Hi/Re</p>
+                        <p>0455-303515</p>
+                        <a href="mailto:annelie.sahlin@skola.karlskrona.se">annelie.sahlin@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Selvina Zec.jpg" alt="">
+                        <p>Selvina Zec Todorovac</p>
+                        <p>Gymnasielärare Vårdämnen</p>
+                        <a
+                            href="mailto:selvina.zectodorovac@skola.karlskrona.se">selvina.zectodorovac@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Anna Olsson.jpg" alt="">
+                        <p>Anna Svärd-Olsson</p>
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <p>0455-304282</p>
+                        <a href="mailto:anna.svard.olsson@skola.karlskrona.se">anna.svard.olsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/ingen.gif" alt="">
+                        <p>Emil Söderstrand</p>
+                        <p>Gymnasielärare Idrott</p>
+                        <a href="mailto:emil.soderstrand@skola.karlskrona.se">emil.soderstrand@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Charlotte S�derstr�m.jpg" alt="">
+                        <p>Charlotte Söderström</p>
+                        <p>Gymnasielärare Bi/Ke/Kt</p>
+                        <a
+                            href="mailto:charlotte.soderstrom@skola.karlskrona.se">charlotte.soderstrom@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Timmy Turesson.jpg" alt="">
+                        <p>Timmy Turesson</p>
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <a href="mailto:timmy.turesson@skola.karlskrona.se">timmy.turesson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Maria Vernersson.jpg" alt="">
+                        <p>Maria Wernersson</p>
+                        <p>Gymnasielärare Ke</p>
+                        <a href="mailto:maria.wernersson@skola.karlskrona.se">maria.wernersson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Magnus Wendeler.jpg" alt="">
+                        <p>Magnus Wendeler</p>¨
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <p>0455-304089</p>
+                        <a href="mailto:magnus.wendeler@skola.karlskrona.se">magnus.wendeler@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Malin Wictorsson.jpg" alt="">
+                        <p>Malin Wictorsson</p>
+                        <p>Gymnasielärare Sv/Re</p>
+                        <a href="mailto:malin.wictorsson@skola.karlskrona.se">malin.wictorsson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Helene �kesson.jpg" alt="">
+                        <p>Helene Åkesson</p>
+                        <p>Gymnasielärare Ma/Ke/Te</p>
+                        <p>0455-303260</p>
+                        <a href="mailto:helene.akesson@skola.karlskrona.se">helene.akesson@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/ingen.gif" alt="">
+                        <p>Klara Ölmedal</p>
+                        <p>Gymnasielärare Ma/Fy</p>
+                        <a href="mailto:klara.olmedal@skola.karlskrona.se">klara.olmedal@skola.karlskrona.se</a>
+                    </article>
+                    <article>
+                        <img src="/img/personal/Mattias Ostberg.jpg" alt="">
+                        <p>Mattias Östberg</p>
+                        <p>Gymnasielärare En/Hi</p>
+                        <a href="mailto:mattias.ostberg@skola.karlskrona.se">mattias.ostberg@skola.karlskrona.se</a>
+                    </article>
+                </section>
+                
+                    
+                    
+                    <div id="ovriga-skolor">
+                        <p>Övriga gymnasieskolor</p>
+                        <div id="ovriga-skolor-links">
+                            <a
+                                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Faf-chapmangymnasiet%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0lSIYuaDQNISLfX4OpI0v4">Kontaktinformation
+                                af Chapmangymnasiet</a>
+                            <a
+                                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ffischerstroemska%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0qy5lCWC6bFiLL6y6yAvp1">Kontaktinformation
+                                Fischerströmska gymnasiet</a>
+                            <a
+                                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ftornstromskagymnasiet%2Fkontakt-1&sa=D&sntz=1&usg=AOvVaw1xxcr0G4u40SBH3AUjSGwM">Kontaktinformation
+                                Törnströmska gymnasiet</a>
+                        </div>
+                </div>
     </main>
 
     <hr class="solid">

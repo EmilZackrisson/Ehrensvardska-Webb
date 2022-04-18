@@ -6,9 +6,8 @@
 
 :root {
     /* Ehrensvärdskas färg */
-    --main-color: #bbe567;
-    --main-fade: linear-gradient(to right, #bbe567, rgb(179, 255, 0));
-    /* --main-color: #76ff26; */
+    /* --main-color: #bbe567; */
+    --main-color: #CFFD72;
 }
 
 body {

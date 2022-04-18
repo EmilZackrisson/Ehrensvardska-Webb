@@ -63,6 +63,39 @@ article img{
     margin: 10px;
 }
 
+#contact-form-container{
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 70vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 50px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form div label{
+    align-self: flex-start;
+}
+
+#subject{
+    resize: vertical;
+    height: 100px;
+}
+
 @media screen and (max-width: 800px) {
     #skolledning-grid {
         grid-template-columns: 45% 45%;
