@@ -8,6 +8,7 @@
     /* Ehrensvärdskas färg */
     /* --main-color: #bbe567; */
     --main-color: #CFFD72;
+    --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 body {
@@ -76,9 +77,15 @@ header {
 footer {
     display: flex;
     justify-content: center;
-    height: 4vh;
+    align-items: center;
+    height: 5vh;
+    flex-direction: column;
 }
 
 footer>p {
-    margin: 1vh;
+    margin: 0.5vh;
+}
+
+footer>a{
+    margin: 0.5vh;
 }

@@ -28,26 +28,9 @@
 
         });
     </script>
+    
 
-<script src="/js/sendEmail.js"></script>
-
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  
-	<script type="text/javascript">
-		function sendEmail() {
-			Email.send({
-				Host: "smtp-relay.sendinblue.com",
-				Username : "emil.zackrisson@gmail.com",
-				Password : "CI9YSm6jsO4VdAqg",
-				To : 'emil.zackrisson@gmail.com',
-				From : "ehrensvardska@emilzackrisson.tk",
-				Subject : "hej",
-				Body : "hej världen",
-			})
-			.then(function(message){
-				alert("mail sent successfully")
-			});
-		}
-	</script> -->
+    <script src="/js/sendEmail.js"></script>
 
 </head>
 
@@ -96,9 +79,9 @@
                     <label for="subject">Meddelande</label>
                     <input type="text" id="subject" name="meddelande" placeholder="Meddelande..." required="required">
                 </div>
-                
 
-                <input type="button" value="Skicka" onclick="sendEmail()">
+
+                <input type="button" value="Skicka" onclick="alert('Den här knappen fungerar inte i den här versionen')">
             </form>
         </section>
         <h2>Skolledning/admin/EHT</h3>
@@ -620,22 +603,22 @@
                         <a href="mailto:mattias.ostberg@skola.karlskrona.se">mattias.ostberg@skola.karlskrona.se</a>
                     </article>
                 </section>
-                
-                    
-                    
-                    <div id="ovriga-skolor">
-                        <p>Övriga gymnasieskolor</p>
-                        <div id="ovriga-skolor-links">
-                            <a
-                                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Faf-chapmangymnasiet%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0lSIYuaDQNISLfX4OpI0v4">Kontaktinformation
-                                af Chapmangymnasiet</a>
-                            <a
-                                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ffischerstroemska%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0qy5lCWC6bFiLL6y6yAvp1">Kontaktinformation
-                                Fischerströmska gymnasiet</a>
-                            <a
-                                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ftornstromskagymnasiet%2Fkontakt-1&sa=D&sntz=1&usg=AOvVaw1xxcr0G4u40SBH3AUjSGwM">Kontaktinformation
-                                Törnströmska gymnasiet</a>
-                        </div>
+
+
+
+                <div id="ovriga-skolor">
+                    <p>Övriga gymnasieskolor</p>
+                    <div id="ovriga-skolor-links">
+                        <a
+                            href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Faf-chapmangymnasiet%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0lSIYuaDQNISLfX4OpI0v4">Kontaktinformation
+                            af Chapmangymnasiet</a>
+                        <a
+                            href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ffischerstroemska%2Fkontakt&sa=D&sntz=1&usg=AOvVaw0qy5lCWC6bFiLL6y6yAvp1">Kontaktinformation
+                            Fischerströmska gymnasiet</a>
+                        <a
+                            href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fgafe.karlskrona.se%2Ftornstromskagymnasiet%2Fkontakt-1&sa=D&sntz=1&usg=AOvVaw1xxcr0G4u40SBH3AUjSGwM">Kontaktinformation
+                            Törnströmska gymnasiet</a>
+                    </div>
                 </div>
     </main>
 

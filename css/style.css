@@ -28,6 +28,7 @@
     align-self: center;
     justify-self: center;
     width: 100%;
+    box-shadow: var(--box-shadow);
 }
 
 main {
@@ -39,6 +40,22 @@ main {
     width: auto;
     /* height: 500px; */
     min-height: 500px;
+
+    
+}
+
+table, td, th{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    border-width: 2px;
+}
+
+table{
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    height: 400px;
 }
 
 @media screen and (max-width: 800px) {
